@@ -1,0 +1,112 @@
+* {
+  font-family: 微軟正黑體;
+  /* outline: 1px solid sienna; */
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid #ccc;
+}
+/* 變數設定 */
+:root {
+  --color1: #3b2c25;
+  --color2: #61544a;
+  --color3: #2d333c;
+  --color4: #e6a33c;
+  --color5: #30120b;
+  --text-color: #646464;
+  --text-price: #752c1c;
+  --main-orange: #e6a33c;
+  --main-white: #ffffff;
+  --cate-font: "Trajan";
+  --main-black: #000000;
+  --main-blackRgba: #000000c0;
+  --em: 16;
+  --color7: rgb(255, 255, 255);
+}
+
+.Home_About_us_bg {
+  background-image: url(../../images/Rectangle-2-copy.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  .Home_About_us_frame {
+    padding-top: 10px;
+    width: 420px;
+    height: 350px;
+    background: var(--main-white);
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    .Home_About_us_img {
+      width: 400px;
+      height: 330px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.Home_About_us_img_1 {
+  transform: rotate(10deg);
+  z-index: 2;
+}
+.Home_About_us_img_2 {
+  left: -50px;
+  transform: rotate(-5deg);
+}
+.Home_About_us_text {
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  width: 500px;
+  p:nth-child(1) {
+    margin: 0;
+    font-size: 40px;
+  }
+  p:nth-child(2) {
+    margin: 0;
+    font-size: 60px;
+    white-space: nowrap;
+    letter-spacing: 3px;
+  }
+  .Home_About_us_btn {
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--main-black);
+    border-radius: 10px;
+    height: 60px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    transition: 0.5s;
+    // &::after {
+    //   content: "";
+    //   border: 1px solid transparent;
+    //   border-radius: 10px;
+    //   height: 60px;
+    //   width: 280px;
+    //   background: transparent;
+    //   position: absolute;
+    //   top: -60px;
+    //   left: -1px;
+    //   transition: 0.5s;
+    // }
+    &:hover {
+      background: var(--main-blackRgba);
+      transition: 0.5s;
+      top: 0;
+      p {
+        transition: 0.5s;
+        color: var(--main-white);
+      }
+    }
+    p {
+      font-size: 30px;
+      margin: 6.5px auto;
+      letter-spacing: 2px;
+      white-space: nowrap;
+      color: var(--main-black);
+    }
+  }
+}

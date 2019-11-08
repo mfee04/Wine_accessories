@@ -1,0 +1,93 @@
+* {
+  font-family: 微軟正黑體;
+  /* outline: 1px solid sienna; */
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid #ccc;
+}
+/* 變數設定 */
+:root {
+  --color1: #3b2c25;
+  --color2: #61544a;
+  --color3: #2d333c;
+  --color4: #e6a33c;
+  --color5: #30120b;
+  --text-color: #646464;
+  --text-price: #752c1c;
+  --main-orange: #e6a33c;
+  --main-white: #ffffff;
+  --cate-font: "Trajan";
+  --main-black: #000000;
+  --main-blackRgba: #000000c0;
+  --em: 16;
+  --color7: rgb(255, 255, 255);
+}
+// 與Navber隔開
+.pt-95 {
+  padding-top: 95px;
+}
+.color1{
+  color: var(--color1);
+}
+//底圖
+.Home_Container_LatestArticles_Bg_img {
+  background-image: url(../../images/Layer-78.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  //標題文字
+  h3 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: var(--main-white);
+  }
+  //兩邊圖片文字區域
+  .figure {
+    position: relative;
+    p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--main-black);
+      color: var(--main-white);
+      padding: 4px;
+      margin: 0;
+    }
+  }
+  //中間圖片文字區域
+  .M_img {
+    width: 540px;
+    height: 553.55px;
+    background: var(--main-white);
+    .figure {
+      display: flex;
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+      margin: auto;
+      padding-top: 16px;
+      img {
+        margin-top: 16px;
+        width: 100%;
+        margin: auto;
+      }
+    }
+    .figure_text {
+      width: 500px;
+      margin: 30px auto;
+      a {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .M_img{
+    width: 350px;
+  }
+}
