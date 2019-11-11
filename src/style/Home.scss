@@ -69,6 +69,10 @@
   width: 25px;
   margin: calc(var(--em) * 0.625px);
 }
+.nav_top_icon > a > img {
+  width: 25px;
+  margin: calc(var(--em) * 0.625px);
+}
 .nav_top_icon > p > strong {
   color: var(--main-orange);
 }

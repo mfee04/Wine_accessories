@@ -110,3 +110,53 @@
     }
   }
 }
+
+@media only screen and (max-width: 1199px) {
+  .Home_Wine_bg {
+    .wine_region {
+      .wine_figure_border:nth-child(5) {
+        display: none;
+      }
+      .wine_figure_border {
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .Home_Wine_bg {
+    .wine_region {
+      .wine_figure_border:nth-child(4) {
+        display: none;
+      }
+      .wine_figure_border {
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Home_Wine_bg {
+    .wine_region {
+      .wine_figure_border:nth-child(3) {
+        display: none;
+      }
+      .wine_figure_border {
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .Home_Wine_bg {
+    .img_wine{
+      a{
+        margin: 0 12px;
+      }
+    }
+    .wine_region {
+      .wine_figure_border:nth-child(2) {
+        display: none;
+      }
+      .wine_figure_border {
+      }
+    }
+  }
+}

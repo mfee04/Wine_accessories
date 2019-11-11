@@ -28,7 +28,7 @@ class Home_Shopping_FS extends React.Component {
                         <h3 className="pt-95">SHOPPING&ensp;FLOW&nbsp;STEPS</h3>
                         <p className="line"></p>
                     </div>
-                    <Container className="d-flex">
+                    <Container className="d-flex justify-content-center Shooping_area">
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
                                 <img src="../images/step1.svg"></img>
@@ -36,42 +36,42 @@ class Home_Shopping_FS extends React.Component {
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
                             <div className="Shopping_FS_text">
-                                <p>></p>
+                                <p>→</p>
                             </div>
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step1.svg"></img>
+                                <img src="../images/step2.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
                             <div className="Shopping_FS_text">
-                                <p>></p>
+                                <p>→</p>
                             </div>
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step1.svg"></img>
+                                <img src="../images/step3.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
                             <div className="Shopping_FS_text">
-                                <p>></p>
+                                <p>→</p>
                             </div>
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step1.svg"></img>
+                                <img src="../images/step4.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
                             <div className="Shopping_FS_text">
-                                <p>></p>
+                                <p>→</p>
                             </div>
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step1.svg"></img>
+                                <img src="../images/step5.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>

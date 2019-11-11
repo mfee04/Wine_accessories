@@ -23,9 +23,9 @@ class Home_About_us extends React.Component {
         return (
             <>
                 <div className="Home_About_us_bg">
-                    <Container className="position-relative">
-                        <Row>
-                            <Col lg={4} md={6} sm={12}>
+                    <Container className="">
+                        <Row className="d-flex Home_About_area">
+                            <Col xl={6} lg={12} className="Home_About_us_img_piece">
                                 <div className="Home_About_us_frame d-flex Home_About_us_img_1">
                                     <div className="Home_About_us_img">
                                         <img src="../images/Container_News/StockSnap_YO2USSKK2K.jpg"></img>
@@ -37,7 +37,7 @@ class Home_About_us extends React.Component {
                                     </div>
                                 </div>
                             </Col>
-                            <Col lg={8} md={6} sm={12} className="position-absolute">
+                            <Col xl={6} lg={12} className="d-flex Home_About_us_textarea">
                                 <div className="Home_About_us_text">
                                     <p>關於我們</p>
                                     <p>ABOUT US</p>
