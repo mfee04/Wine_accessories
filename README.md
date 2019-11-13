@@ -17,7 +17,7 @@
   
 ．待解決問題  
 　1.　<del>Accessories_left_priceSlider 有使用 jQuery UI 插件，吃不到 CDN </del>已解決  
-　2.　RWD  
+　2.　<del>RWD</del> 已解決    
 <hr />　
 
 2019.11.09  
@@ -41,7 +41,7 @@
 ．待解決問題  
 　1.　<del>Accessories_right_goods 想連結到細節頁的 Router 可能被寫壞了XD</del> 已解決  
 　2.　<del>Wine_acce_detail_picslider_preview 的JQ尚未寫完</del> 已解決  
-　3.　RWD  
+　3.　<del>RWD</del> 已解決    
 <hr />　
 
 2019.11.11 Pocky日  
@@ -58,6 +58,20 @@
 　  
 ．待解決問題  
  1. onChange事件、onClick事件  
- 2. RWD  
+ 2. <del>RWD</del> 已解決   
+<hr />　
+
+2019.11.12 & 13  
+．酒具商品列表頁（Wine_accessories_index）  
+．酒具商品細節頁（Wine_accessories_detail）  
+　｜_　RWD 完成  
+．酒類商品列表頁（Wine_Tasting_index）  
+．酒類商品細節頁（Wine_Tasting_detail）  
+　｜_　組合與 RWD 完成  
+　     
+　  
+．待解決問題  
+ 1. onChange事件、onClick事件  
+ 2. 細節頁照片 slider 在RWD時會有bug  
  
 　  

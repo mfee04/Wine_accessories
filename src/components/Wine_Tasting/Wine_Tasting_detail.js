@@ -8,20 +8,20 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 //css樣式
-import '../../style/Wine_accessories/Wine_service_detail.scss'
+import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 //分頁連結
-import Wine_acce_detail_breadcrumb from './Wine_acce_detail_breadcrumb'
-import Wine_acce_detail_picslider from './Wine_acce_detail_picslider'
-import Wine_acce_detail_picslider_preview from './Wine_acce_detail_picslider_preview'
-import Wine_acce_detail_info from './Wine_acce_detail_info'
-import Wine_acce_detail_info_btn from './Wine_acce_detail_info_btn'
-import Wine_acce_detail_dec_title from './Wine_acce_detail_dec_title'
-import Wine_acce_detail_recommenditem from './Wine_acce_detail_recommenditem'
+import Tasting_breadcrumb from './Tasting_breadcrumb'
+import Tasting_detail_picslider from './Tasting_detail_picslider'
+import Tasting_detail_picslider_preview from './Tasting_detail_picslider_preview'
+import Tasting_detail_info from './Tasting_detail_info'
+import Tasting_detail_info_btn from './Tasting_detail_info_btn'
+import Tasting_detail_dec_title from './Tasting_detail_dec_title'
+import Tasting_detail_recommenditem from './Tasting_detail_recommenditem'
 
 import Navigation_Navber from '../Navigation_Navber/Navigation_Navber'
 import Footer from '../Navigation_Navber/Footer'
-class Wine_accessories_detail extends React.Component {
-  
+
+class Wine_Tasting_detail extends React.Component {
   constructor() {
     super()
   }
@@ -59,31 +59,31 @@ class Wine_accessories_detail extends React.Component {
 
         <Container>
           {/* 麵包屑 */}
-          <Wine_acce_detail_breadcrumb />
+          <Tasting_breadcrumb />
           {/* --商品照片與資訊 */}
           <Row>
             {/* --商品照片 */}
             <Col lg={6} md={12} sm={12} className="my-4">
-              <Wine_acce_detail_picslider />
-              <Wine_acce_detail_picslider_preview />
+              <Tasting_detail_picslider />
+              <Tasting_detail_picslider_preview />
             </Col>
             {/* --商品資訊 */}
             <Col lg={6} md={12} sm={12} className="my-4">
-              <Wine_acce_detail_info />
-              <Wine_acce_detail_info_btn />
+              <Tasting_detail_info />
+              <Tasting_detail_info_btn />
             </Col>
           </Row>
           {/* 商品簡述標題+品牌故事標題 */}
           <Row>
           <Col lg={12}>
-            <Wine_acce_detail_dec_title />
+            <Tasting_detail_dec_title />
           </Col>
           </Row>
           {/* 商品簡述+品牌故事內文 */}
           <Row>
-            <Col lg={12} md={12} className="goods_description">若說美酩是一場品酒體驗的主角，嚴選自 Rosendahl 的酒杯便是不可或缺的完美配角；設計師 Erik Bagger 以適合每日使用的酒器為設計核心，用堅固無鉛玻璃打造出剔透輕盈的雙酒杯組。無論是下班後對月獨酌釋放壓力；亦或週末時光，將珍藏美酒開瓶，與摯友暢飲言歡、情人浪漫對杯，它皆會是您必備的品酩良伴。
+            <Col lg={12} md={12} className="goods_description">限量生產的銀璽17年雪莉桶風味輕原酒，是經Oloroso與PX首次雪莉桶陳釀後調製而成。兼具PX的滑順與Oloroso的豐富木質口感。特殊的46%非冷凝過濾，保留住酒液完整風味。
                 </Col>
-            <Col lg={12} md={12} className="goods_brand_story">在斯堪的納維亞半島地區，Rosendahl 一直是最知名、最具創新性的設計品牌之一。他們將玻璃、塑料、陶瓷等豐沛材質靈活運用，並把北歐民族對大自然的熱愛精神，融入生活餐具之中；其中 Grand Cru 是最具代表性的系列作品，標誌性的四道冰鑿線，讓餐具著上極北冰川的美麗光影。品牌旗下作品得獎無數，廣受歡迎，走進歐美的設計商店、高級百貨公司、禮品店、生活雜貨店，甚至博物館展覽館，Rosendahl 經常是「架上嘉賓」。
+            <Col lg={12} md={12} className="goods_brand_story">The brand has always maintained a close relationship to the Muirhead’s Clan. The history of the clan can be traced far back in Scottish History. The name Muirhead’s means “Head of the Moor” or “Highest Point of the Moor” in Gaelic.
                 </Col>
           </Row>
           {/* 幫您推薦標題 */}
@@ -93,11 +93,11 @@ class Wine_accessories_detail extends React.Component {
           {/* 幫您推薦商品 */}
           <Row className="mt-4">
             <Col className="recommend_area d-flex">
-              <Wine_acce_detail_recommenditem />
-              <Wine_acce_detail_recommenditem />
-              <Wine_acce_detail_recommenditem />
-              <Wine_acce_detail_recommenditem />
-              <Wine_acce_detail_recommenditem />
+              <Tasting_detail_recommenditem />
+              <Tasting_detail_recommenditem />
+              <Tasting_detail_recommenditem />
+              <Tasting_detail_recommenditem />
+              <Tasting_detail_recommenditem />
             </Col>
           </Row>
 
@@ -107,4 +107,4 @@ class Wine_accessories_detail extends React.Component {
     )
   }
 }
-export default Wine_accessories_detail
+export default Wine_Tasting_detail

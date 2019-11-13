@@ -8,11 +8,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 //css樣式
-import '../../style/Wine_accessories/Wine_service_detail.scss'
+import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 //分頁連結
 
 
-class Wine_acce_detail_picslider extends React.Component {
+class Tasting_detail_picslider extends React.Component {
     constructor() {
         super()
     }
@@ -38,4 +38,4 @@ class Wine_acce_detail_picslider extends React.Component {
         )
     }
 }
-export default Wine_acce_detail_picslider
+export default Tasting_detail_picslider

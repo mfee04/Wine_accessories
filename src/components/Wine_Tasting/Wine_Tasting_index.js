@@ -10,13 +10,14 @@ import Col from 'react-bootstrap/Col'
 //css樣式
 import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 //分頁連結
-import Accessories_left_cate from './Accessories_left_cate'
-import Accessories_left_sort from './Accessories_left_sort'
-import Accessories_left_priceSlider from './Accessories_left_priceSlider'
-import Accessories_right_goods from './Accessories_right_goods'
-import Accessories_right_pages from './Accessories_right_pages'
+import Tasting_left_origin from './Tasting_left_origin'
+import Tasting_left_cate from './Tasting_left_cate'
+import Tasting_left_sort from './Tasting_left_sort'
+import Tasting_left_priceSlider from './Tasting_left_priceSlider'
+import Tasting_right_goods from './Tasting_right_goods'
+import Tasting_right_pages from './Tasting_right_pages'
 
-class Wine_accessories_index extends React.Component {
+class Wine_Tasting_index extends React.Component {
     constructor() {
         super()
     }
@@ -54,27 +55,28 @@ class Wine_accessories_index extends React.Component {
               <Row>
               {/* 左邊 分類篩選*/}
                 <Col lg={3} sm={12} id="left_menu">
-                  <Accessories_left_cate/>
-                  <Accessories_left_sort/>
-                  <Accessories_left_priceSlider/>
+                  <Tasting_left_origin/>
+                  <Tasting_left_cate/>
+                  <Tasting_left_sort/>
+                  <Tasting_left_priceSlider/>
                 </Col>
               {/* 右邊 顯示商品列表*/}
                 <Col lg={9} sm={12} id="main_area">
                   <Row>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
+                  <Tasting_right_goods/>
                   {/* 下方顯示總頁數*/}
                   <Col lg={12}>
-                    <Accessories_right_pages/>
+                    <Tasting_right_pages/>
                   </Col>
                   </Row>
                 </Col>
@@ -84,4 +86,4 @@ class Wine_accessories_index extends React.Component {
         )
     }
 }
-export default Wine_accessories_index
+export default Wine_Tasting_index

@@ -5,13 +5,13 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 //css樣式
-import '../../style/Wine_accessories/Wine_accessories_index.scss'
+import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 //分頁連結
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 
 import $ from 'jquery'
 
-class Accessories_left_cate extends React.Component {
+class Tasting_left_origin extends React.Component {
     constructor() {
         super()
     }
@@ -24,7 +24,7 @@ class Accessories_left_cate extends React.Component {
           <>
             <div id="left_menu_cate" className="mt-4">
               <div className="menu_cate_tit">
-                <p>CATEGORIES</p>
+                <p>ORIGIN</p>
                 <div className="plus-minus-cate">
                   <img src="../images/Wine_Accessories/plus.png" className="plus-cate" alt="" />
                   <img src="../images/Wine_Accessories/minus.png" className="minus-cate" alt="" />
@@ -32,24 +32,20 @@ class Accessories_left_cate extends React.Component {
               </div>
               <ul>
                 <li className="d-flex justify-content-between">
-                  <div>酒杯</div>
-                  <div>(7)</div>
+                  <div>美國 USA</div>
+                  {/* <div>(7)</div> */}
                 </li>
                 <li className="d-flex justify-content-between">
-                  <div>醒酒器</div>
-                  <div>(7)</div>
+                  <div>法國 France</div>
+                  {/* <div>(7)</div> */}
                 </li>
                 <li className="d-flex justify-content-between">
-                  <div>注酒器</div>
-                  <div>(7)</div>
+                  <div>義大利 Italy</div>
+                  {/* <div>(7)</div> */}
                 </li>
                 <li className="d-flex justify-content-between">
-                  <div>冰桶</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
-                  <div>其他</div>
-                  <div>(7)</div>
+                  <div>西班牙 Spain</div>
+                  {/* <div>(7)</div> */}
                 </li>
               </ul>
           </div>
@@ -57,4 +53,4 @@ class Accessories_left_cate extends React.Component {
         )
     }
 }
-export default Accessories_left_cate
+export default Tasting_left_origin

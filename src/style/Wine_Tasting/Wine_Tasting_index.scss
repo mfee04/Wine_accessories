@@ -64,7 +64,7 @@
   width: 90%;
   color: var(--text-color);
   border: solid 1px var(--frame-color);
-  margin: calc(var(--em) * 2px) auto 0 auto;
+  margin: calc(var(--em) * 1px) auto 0 auto;
   padding: 0 calc(var(--em) * 0.8px) calc(var(--em) * 0.8px);
 }
 .menu_menu_tit > p {
@@ -237,6 +237,10 @@
 
 /* - - - - - - - - - - - - */
 /* 下方分頁按鈕 */
+.page{
+  // 把頁面推開
+  margin: 100px 0;
+}
 .page_num {
   padding: 8px 10px;
   margin: 30px 10px;
@@ -297,9 +301,9 @@
   .menu_menu_tit {
     border-bottom: 1px solid var(--frame-color);
   }
-  .menu_menu_tit > p {
-    margin-bottom: 0;
-  }
+  // .menu_menu_tit > p {
+  //   margin-bottom: 0;
+  // }
   .sort_option {
     display: none;
   }

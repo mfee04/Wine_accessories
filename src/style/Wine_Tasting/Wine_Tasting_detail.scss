@@ -181,7 +181,7 @@
 /* 推薦商品 */
 .recommend_area {
   display: flex;
-  margin-bottom: calc(var(--em) * 3px);
+  /* margin: 0 auto calc(var(--em) * 3px) auto; */
 }
 .recommend_item {
   width: 20%;

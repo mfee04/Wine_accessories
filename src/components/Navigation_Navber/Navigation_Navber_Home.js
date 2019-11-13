@@ -5,7 +5,8 @@ import '../../style/Home.scss'
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 import Home from '../../pages/Home'
 import Dining_pub_inquiry from '../../pages/Dining_pub_inquiry'
-import Wine_tasting from '../../pages/Wine_tasting'
+import Wine_tasting from '../../pages/Wine_tasting' 
+import Wine_Tasting_detail from '../Wine_Tasting/Wine_Tasting_detail' 
 import Wine_accessories from '../../pages/Wine_accessories'
 import Wine_accessories_detail from '../../components/Wine_Accessories/Wine_accessories_detail'
 import latest_events from '../../pages/latest_events'
@@ -102,6 +103,7 @@ class Navigation_Navber_Home extends React.Component {
                         <Route exact path="/" component={Home} /> {/* 首頁 */}
                         <Route exact path="/Dining_pub_inquiry" component={Dining_pub_inquiry} />{/* 餐酒館查詢 */}
                         <Route exact path="/Wine_tasting" component={Wine_tasting} />{/* 品酒迷因 */}
+                        <Route exact path="/Wine_tasting/Wine_Tasting_detail" component={Wine_Tasting_detail} />{/* 品酒迷因 */}
                         <Route exact path="/Wine_accessories" component={Wine_accessories} />{/* 酒具服務 */}
                         <Route exact path="/Wine_accessories/Wine_accessories_detail" component={Wine_accessories_detail} />{/* 酒具細節 */}
                         <Route exact path="/latest_events" component={latest_events} />{/* 最新活動 */}

@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 //css樣式
-import '../../style/Wine_accessories/Wine_accessories_index.scss'
+import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 //分頁連結
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 
@@ -16,7 +16,7 @@ import $ from 'jquery'
 // value的值要用state去抓
 // https://tinyurl.com/y2e68fpf
 
-class Accessories_left_sort extends React.Component {
+class Tasting_left_sort extends React.Component {
     constructor() {
         super()
     }
@@ -70,4 +70,4 @@ class Accessories_left_sort extends React.Component {
         )
     }
 }
-export default Accessories_left_sort
+export default Tasting_left_sort

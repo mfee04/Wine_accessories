@@ -5,13 +5,13 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 //css樣式
-import '../../style/Wine_accessories/Wine_accessories_index.scss'
+import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 //分頁連結
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 
 import $ from 'jquery'
 
-class Accessories_left_cate extends React.Component {
+class Tasting_left_cate extends React.Component {
     constructor() {
         super()
     }
@@ -22,7 +22,7 @@ class Accessories_left_cate extends React.Component {
     render() {
         return (
           <>
-            <div id="left_menu_cate" className="mt-4">
+            <div id="left_menu_cate" className="mt-2">
               <div className="menu_cate_tit">
                 <p>CATEGORIES</p>
                 <div className="plus-minus-cate">
@@ -32,23 +32,35 @@ class Accessories_left_cate extends React.Component {
               </div>
               <ul>
                 <li className="d-flex justify-content-between">
-                  <div>酒杯</div>
+                  <div>冰酒</div>
                   <div>(7)</div>
                 </li>
                 <li className="d-flex justify-content-between">
-                  <div>醒酒器</div>
+                  <div>葡萄酒</div>
                   <div>(7)</div>
                 </li>
                 <li className="d-flex justify-content-between">
-                  <div>注酒器</div>
+                  <div>威士忌</div>
                   <div>(7)</div>
                 </li>
                 <li className="d-flex justify-content-between">
-                  <div>冰桶</div>
+                  <div>氣泡酒</div>
                   <div>(7)</div>
                 </li>
                 <li className="d-flex justify-content-between">
-                  <div>其他</div>
+                  <div>法國香檳</div>
+                  <div>(7)</div>
+                </li>
+                <li className="d-flex justify-content-between">
+                  <div>甜白酒</div>
+                  <div>(7)</div>
+                </li>
+                <li className="d-flex justify-content-between">
+                  <div>白酒</div>
+                  <div>(7)</div>
+                </li>
+                <li className="d-flex justify-content-between">
+                  <div>紅酒</div>
                   <div>(7)</div>
                 </li>
               </ul>
@@ -57,4 +69,4 @@ class Accessories_left_cate extends React.Component {
         )
     }
 }
-export default Accessories_left_cate
+export default Tasting_left_cate
