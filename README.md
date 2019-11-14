@@ -69,9 +69,16 @@
 ．酒類商品細節頁（Wine_Tasting_detail）  
 　｜_　組合與 RWD 完成  
 　     
-　  
 ．待解決問題  
  1. onChange事件、onClick事件  
- 2. 細節頁照片 slider 在RWD時會有bug  
+ 2. <del>細節頁照片 slider 在RWD時會有bug</del>  
+<hr />　
+
+2019.11.14   
+．酒具商品細節頁（Wine_accessories_detail）& 酒類商品細節頁（Wine_Tasting_detail）  
+　照片 Slider 在RWD時有bug  
+　     
+．待解決問題  
+ 1. onChange事件、onClick事件  
  
 　  

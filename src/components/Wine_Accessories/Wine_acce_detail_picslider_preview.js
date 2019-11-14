@@ -21,18 +21,24 @@ class Wine_acce_detail_picslider_preview extends React.Component {
       let sliderWidth = $("#slider_wrap").width();
       let sliderNum = 0;
       let sliderCont = $(".slider-cont li").length
+      let previewImgIndex = 0;
+
+      $(".preview_img").eq(0).css("border-color","var(--text-color)")
+
       $(".slider-cont").css("width",sliderWidth*sliderCont)
       $(window).resize(function(event){
         sliderWidth = $("#slider_wrap").width();
         $(".slider-cont").css("width",sliderWidth*sliderCont)
+        $(".slider-cont").css("left",0-sliderWidth*previewImgIndex)
       })
       $(".preview_img").click(function(event){
         $(this).css("border-color","var(--text-color)")
         $(this).siblings().css("border-color","transparent")
-        let previewImgIndex = $(this).index()
+        previewImgIndex = $(this).index()
         $(".slider-cont").css("left",0-sliderWidth*previewImgIndex)
       })
     }
+
 
     render() {
         return (
