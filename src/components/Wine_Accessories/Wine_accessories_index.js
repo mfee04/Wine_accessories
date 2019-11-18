@@ -17,23 +17,14 @@ import Accessories_right_goods from './Accessories_right_goods'
 import Accessories_right_pages from './Accessories_right_pages'
 
 class Wine_accessories_index extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
+        this.state = {
+          goods: []
+        }
     }
-    //JQ放這
+    //
     componentDidMount() {
-      // 動態修改折價後的價格
-      // 因為是套用整頁所以放在這裡
-      $(".price_area>span>del").each(function() {
-        var goods_org_price = $(this).text();
-        // console.log(goods_org_price);
-        var goods = $(this);
-        var goods_discount = parseInt(goods_org_price) * 0.9;
-        // console.log(goods_discount);
-        $(
-          `<span class="price_discount">` + goods_discount + `</span>`
-        ).insertAfter(goods);
-      });
       // RWD 左邊欄位下拉選單
       $(".plus-minus-cate").click(function(){
         $("#left_menu_cate>ul").slideToggle()
@@ -61,17 +52,7 @@ class Wine_accessories_index extends React.Component {
               {/* 右邊 顯示商品列表*/}
                 <Col lg={9} sm={12} id="main_area">
                   <Row>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
-                  <Accessories_right_goods/>
+                    <Accessories_right_goods/>
                   {/* 下方顯示總頁數*/}
                   <Col lg={12}>
                     <Accessories_right_pages/>

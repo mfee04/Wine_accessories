@@ -105,7 +105,7 @@ class Navigation_Navber_Home extends React.Component {
                         <Route exact path="/Wine_tasting" component={Wine_tasting} />{/* 品酒迷因 */}
                         <Route exact path="/Wine_tasting/Wine_Tasting_detail" component={Wine_Tasting_detail} />{/* 品酒迷因 */}
                         <Route exact path="/Wine_accessories" component={Wine_accessories} />{/* 酒具服務 */}
-                        <Route exact path="/Wine_accessories/Wine_accessories_detail" component={Wine_accessories_detail} />{/* 酒具細節 */}
+                        <Route exact path="/Wine_accessories_detail" component={Wine_accessories_detail} />{/* 酒具細節 */}
                         <Route exact path="/latest_events" component={latest_events} />{/* 最新活動 */}
                         <Route exact path="/New_knowledge_of_bartending" component={New_knowledge_of_bartending} />{/* 調酒新知 */}
                         <Route exact path="/about_us" component={about_us} />{/* 關於我們 */}

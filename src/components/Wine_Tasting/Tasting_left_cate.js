@@ -17,6 +17,10 @@ class Tasting_left_cate extends React.Component {
     }
     //JQ放這
     componentDidMount() {
+      // 篩選類別第二層動畫
+      $(".cate_1st").click(function(){
+        $(this).parent().find(".cate_2se").slideToggle()
+      })
     }
 
     render() {
@@ -31,38 +35,104 @@ class Tasting_left_cate extends React.Component {
                 </div>
               </div>
               <ul>
-                <li className="d-flex justify-content-between">
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>冰酒</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(4)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>冰酒1</li>
+                    <li>冰酒2</li>
+                    <li>冰酒3</li>
+                    <li>冰酒4</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>葡萄酒</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>葡萄酒1</li>
+                    <li>葡萄酒2</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>威士忌</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>達文西密碼的上面是什麼</li>
+                    <li>達文西帳號</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>氣泡酒</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>川普跌倒會變成什麼</li>
+                    <li>三普</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>法國香檳</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>有一個麵包，走著走著肚子餓了</li>
+                    <li>，於是就把自己吃了。</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>甜白酒</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>我想不到笑話了</li>
+                    <li>哈哈</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>白酒</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>我想不到笑話了</li>
+                    <li>哈哈</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>紅酒</div>
-                  <div>(7)</div>
-                </li>
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>我想不到笑話了</li>
+                    <li>哈哈</li>
+                  </ul>
+                </div>
+              </li>
               </ul>
           </div>
           </>

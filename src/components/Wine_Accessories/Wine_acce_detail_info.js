@@ -15,11 +15,11 @@ import '../../style/Wine_accessories/Wine_service_detail.scss'
 class Wine_acce_detail_info extends React.Component {
     constructor() {
         super()
+        this.state = {
+        };
     }
-    //JQ放這
-    componentDidMount() {
-
-    }
+  componentDidMount = async () => {
+  }
 
     render() {
       const canBuy = {
@@ -36,7 +36,7 @@ class Wine_acce_detail_info extends React.Component {
               </li>
               <li className="detail_info">
                 <div className="info_title">類型：</div>
-                <div className="info_des">酒杯／葡萄酒杯／白酒杯</div>
+                <div className="info_des">123</div>
               </li>
               <li className="detail_info">
                 <div className="info_title">尺寸：</div>

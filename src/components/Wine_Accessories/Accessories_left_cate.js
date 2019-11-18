@@ -17,6 +17,10 @@ class Accessories_left_cate extends React.Component {
     }
     //JQ放這
     componentDidMount() {
+      // 篩選類別第二層動畫
+      $(".cate_1st").click(function(){
+        $(this).parent().find(".cate_2se").slideToggle()
+      })
     }
 
     render() {
@@ -31,26 +35,73 @@ class Accessories_left_cate extends React.Component {
                 </div>
               </div>
               <ul>
-                <li className="d-flex justify-content-between">
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>酒杯</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(4)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>葡萄酒杯</li>
+                    <li>威士忌杯</li>
+                    <li>白蘭地杯</li>
+                    <li>雞尾酒杯</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>醒酒器</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>有過濾功能</li>
+                    <li>無過濾功能</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>注酒器</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(2)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>有瓶塞</li>
+                    <li>無瓶塞</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>冰桶</div>
-                  <div>(7)</div>
-                </li>
-                <li className="d-flex justify-content-between">
+                  <div>(3)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>不鏽鋼</li>
+                    <li>銀製</li>
+                    <li>塑料</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="">
+                <div class="cate_1st d-flex justify-content-between">
                   <div>其他</div>
-                  <div>(7)</div>
-                </li>
+                  <div>(6)</div>
+                </div>
+                <div class="cate_2se">
+                  <ul>
+                    <li>開瓶器</li>
+                    <li>止滴片</li>
+                    <li>止滴環</li>
+                    <li>溫度計</li>
+                    <li>溫度環</li>
+                    <li>不鏽鋼冰塊</li>
+                  </ul>
+                </div>
+              </li>
               </ul>
           </div>
           </>

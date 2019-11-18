@@ -33,6 +33,7 @@ class Tasting_right_goods extends React.Component {
             <div className="goods_info d-flex justify-content-between align-items-center">
               <div className="price_area">
                 <span>$<del>1900</del></span>
+                <span className="price_discount ml-2">$</span>
               </div>
               <div className="goods_icon d-flex">
                 <div className="goods_icon_compare">

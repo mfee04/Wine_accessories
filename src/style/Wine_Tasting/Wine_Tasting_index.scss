@@ -59,6 +59,25 @@
   padding: calc(var(--em) * 0.5px) 0;
   border-bottom: dashed 0.5px var(--frame-color);
 }
+
+// 第二層分類
+.cate_2se{
+  display: none;
+}
+.cate_2se>ul{
+  list-style: none;
+}
+.cate_2se>ul>li{
+  margin-left: 8px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: var(--frame-color);
+}
+.cate_2se>ul>li:hover{
+  color: var(--text-color);
+}
+
+
 /* 選擇sort */
 #left_menu_sort {
   width: 90%;

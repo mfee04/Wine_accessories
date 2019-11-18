@@ -80,5 +80,16 @@
 　     
 ．待解決問題  
  1. onChange事件、onClick事件  
+<hr />　
+
+2019.11.18   
+．新增 Accessories_left_cate 和 Tasting_left_cate 的第二層分類選擇CSS和JQ  
+．萬能的React老師協助修改細節頁的優惠價呈現方式  
+　（撈到原價後再做折價計算，已把原本的JQ刪掉）  
+．可以從node撈到資料
+　  
+．待解決問題  
+ 1. onChange事件、onClick事件  
+ 2. 篩選  
  
 　  

@@ -24,16 +24,16 @@ class Accessories_right_goods extends React.Component {
     return (
       <>
           <Col lg={3} md={6} sm={6} className="mt-4 goods">
-            {/* 跳轉到酒具詳細頁面，網址有成功切換，但頁面沒動作 */}
-            <Link to="/Wine_accessories/Wine_accessories_detail">
+            <Link to="/Wine_accessories_detail">
               <div className="goods_pic">
                 <img src="../images/Wine_Accessories/whitewine-rosendahl-grand-cru.jpg" alt="" />
               </div>
             </Link>
-            <p>Rosendahl Grand Cru波爾多白酒杯（一組二入）</p>
+            <p>{this.props.name}</p>
             <div className="goods_info d-flex justify-content-between align-items-center">
               <div className="price_area">
-                <span>$<del>1900</del></span>
+                <span>$<del>1500</del></span> 
+                <span className="price_discount ml-2"></span>
               </div>
               <div className="goods_icon d-flex">
                 <div className="goods_icon_compare">
