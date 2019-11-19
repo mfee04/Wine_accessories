@@ -81,7 +81,12 @@ class Accessories_left_sort extends React.Component {
               <label for="price_high">價格（高至低）</label>
             </div>
             <div className="sort_option">
-              <input type="checkbox" name="combo" id="combo" value="combo" />
+              <input 
+                type="checkbox" 
+                name="combo" 
+                id="combo" 
+                value="combo" 
+                />
               <label for="combo">精選組合</label>
             </div>
           </div>

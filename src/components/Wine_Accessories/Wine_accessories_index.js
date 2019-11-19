@@ -20,12 +20,13 @@ class Wine_accessories_index extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          goods: []
+          goods: [],
+          filter:[]
         }
     }
     //
-    componentDidMount() {
-      fetch('http://localhost:3000/wine-acce-db')
+    async componentDidMount() {
+      await fetch('http://localhost:3000/wine-acce-db')
       .then((response) => response.json())
       .then((responseJson) => {
         this.setState({
@@ -51,6 +52,24 @@ class Wine_accessories_index extends React.Component {
 
     }
 
+    // 在子元件觸發 handlefilter 事件後再傳handlefilter('XXX')值到這裡（父元件），並用value這個變數去接
+    // 接了之後把 value　傳回到node
+    handlefilter=(value)=>()=>{
+      console.log(value)
+      let arr=[]
+      
+      fetch('http://localhost:3000/wine-acce-item/'+value)
+      .then((response) => response.json())
+      .then((responseJson) => {
+        this.setState({
+          goods : responseJson,
+        });
+        console.log(responseJson)
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+    }
 
     render() {
 
@@ -65,7 +84,7 @@ class Wine_accessories_index extends React.Component {
               <Row>
               {/* 左邊 分類篩選*/}
                 <Col lg={3} sm={12} id="left_menu">
-                  <Accessories_left_cate/>
+                  <Accessories_left_cate handlefilter={this.handlefilter}/>
                   <Accessories_left_sort/>
                   <Accessories_left_priceSlider/>
                 </Col>
@@ -78,6 +97,9 @@ class Wine_accessories_index extends React.Component {
                       key={item.sid}
                       name={item.name}
                       product_price={item.product_price}
+                      product_pic={item.product_pic}
+                      category_1st={item.category_1st}
+                      category_2nd={item.category_2nd}
                     />)}
                   {/* 下方顯示總頁數*/}
                   <Col lg={12}>

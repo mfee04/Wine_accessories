@@ -12,18 +12,20 @@ import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-rou
 import $ from 'jquery'
 
 class Accessories_left_cate extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
+        console.log(props)
     }
-    //JQ放這
     componentDidMount() {
       // 篩選類別第二層動畫
       $(".cate_1st").click(function(){
         $(this).parent().find(".cate_2se").slideToggle()
       })
     }
-
+    
+    
     render() {
+      
         return (
           <>
             <div id="left_menu_cate" className="mt-4">
@@ -42,22 +44,22 @@ class Accessories_left_cate extends React.Component {
                 </div>
                 <div class="cate_2se">
                   <ul>
-                    <li>葡萄酒杯</li>
-                    <li>威士忌杯</li>
-                    <li>白蘭地杯</li>
-                    <li>雞尾酒杯</li>
+                    <li onClick={this.props.handlefilter('b1')}>葡萄酒杯</li>
+                    <li onClick={this.props.handlefilter('b2')}>威士忌杯</li>
+                    <li onClick={this.props.handlefilter('b3')}>白蘭地杯</li>
+                    <li onClick={this.props.handlefilter('b4')}>雞尾酒杯</li>
                   </ul>
                 </div>
               </li>
-              <li class="">
+              <li>
                 <div class="cate_1st d-flex justify-content-between">
                   <div>醒酒器</div>
                   <div>(2)</div>
                 </div>
                 <div class="cate_2se">
                   <ul>
-                    <li>有過濾功能</li>
-                    <li>無過濾功能</li>
+                    <li onClick={this.props.handlefilter('b6')}>有過濾功能</li>
+                    <li onClick={this.props.handlefilter('b7')}>無過濾功能</li>
                   </ul>
                 </div>
               </li>
@@ -68,8 +70,8 @@ class Accessories_left_cate extends React.Component {
                 </div>
                 <div class="cate_2se">
                   <ul>
-                    <li>有瓶塞</li>
-                    <li>無瓶塞</li>
+                    <li onClick={this.props.handlefilter('b8')}>有瓶塞</li>
+                    <li onClick={this.props.handlefilter('b9')}>無瓶塞</li>
                   </ul>
                 </div>
               </li>
@@ -80,9 +82,9 @@ class Accessories_left_cate extends React.Component {
                 </div>
                 <div class="cate_2se">
                   <ul>
-                    <li>不鏽鋼</li>
-                    <li>銀製</li>
-                    <li>塑料</li>
+                    <li onClick={this.props.handlefilter('b10')}>不鏽鋼</li>
+                    <li onClick={this.props.handlefilter('b11')}>銀製</li>
+                    <li onClick={this.props.handlefilter('b12')}>塑料</li>
                   </ul>
                 </div>
               </li>
@@ -93,12 +95,12 @@ class Accessories_left_cate extends React.Component {
                 </div>
                 <div class="cate_2se">
                   <ul>
-                    <li>開瓶器</li>
-                    <li>止滴片</li>
-                    <li>止滴環</li>
-                    <li>溫度計</li>
-                    <li>溫度環</li>
-                    <li>不鏽鋼冰塊</li>
+                    <li onClick={this.props.handlefilter('b13')}>開瓶器</li>
+                    <li onClick={this.props.handlefilter('b14')}>止滴片</li>
+                    <li onClick={this.props.handlefilter('b15')}>止滴環</li>
+                    <li onClick={this.props.handlefilter('b16')}>溫度計</li>
+                    <li onClick={this.props.handlefilter('b17')}>溫度環</li>
+                    <li onClick={this.props.handlefilter('b18')}>不鏽鋼冰塊</li>
                   </ul>
                 </div>
               </li>

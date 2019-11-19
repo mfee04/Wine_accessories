@@ -26,14 +26,14 @@ class Accessories_right_goods extends React.Component {
           <Col lg={3} md={6} sm={6} className="mt-4 goods">
             <Link to="/Wine_accessories_detail">
               <div className="goods_pic">
-                <img src="../images/Wine_Accessories/whitewine-rosendahl-grand-cru.jpg" alt="" />
+                <img src={`http://localhost/bistro/lib/images/acce/${this.props.product_pic}`} alt="" />
               </div>
             </Link>
             <p>{this.props.name}</p>
             <div className="goods_info d-flex justify-content-between align-items-center">
               <div className="price_area">
                 <span>$<del>{this.props.product_price}</del></span> 
-                <span className="price_discount ml-2">${this.props.product_price*0.9}</span>
+                <span className="price_discount ml-2">${Math.floor(this.props.product_price*0.9)}</span>
               </div>
               <div className="goods_icon d-flex">
                 <div className="goods_icon_compare">
