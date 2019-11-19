@@ -20,8 +20,27 @@ class Tasting_left_sort extends React.Component {
     constructor() {
         super()
     }
-    //JQ放這
     componentDidMount() {
+      // SORT選項中：
+      // 價格由低至高&由高至低的CHECKBOX不可以同時被點選（邏輯錯誤）
+      $("#price_low").click(function() {
+        if(this.checked) {
+          $("#price_high").attr("disabled","disabled")
+          $("label[for='price_high']").css("color","var(--frame-color)")
+        }else{
+          $("#price_high").removeAttr("disabled")
+          $("label[for='price_high']").css("color","var(--text-color)")
+        }
+      });
+      $("#price_high").click(function() {
+        if(this.checked) {
+          $("#price_low").attr("disabled","disabled")
+          $("label[for='price_low']").css("color","var(--frame-color)")
+        }else{
+          $("#price_low").removeAttr("disabled")
+          $("label[for='price_low']").css("color","var(--text-color)")
+        }
+      });      
     }
 
     render() {
