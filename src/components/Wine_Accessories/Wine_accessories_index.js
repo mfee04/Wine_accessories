@@ -25,6 +25,18 @@ class Wine_accessories_index extends React.Component {
     }
     //
     componentDidMount() {
+      fetch('http://localhost:3000/wine-acce-db')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        this.setState({
+          goods : responseJson,
+        });
+        console.log(responseJson)
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
       // RWD 左邊欄位下拉選單
       $(".plus-minus-cate").click(function(){
         $("#left_menu_cate>ul").slideToggle()
@@ -36,9 +48,17 @@ class Wine_accessories_index extends React.Component {
         $(".plus-sort").toggle()
         $(".minus-sort").toggle()
       })
+
     }
 
+
     render() {
+
+      if(!this.state.goods.length) return <></>
+
+      //解構賦值
+      const {goods} = this.state
+
         return (
           <>
           <Container>
@@ -52,11 +72,18 @@ class Wine_accessories_index extends React.Component {
               {/* 右邊 顯示商品列表*/}
                 <Col lg={9} sm={12} id="main_area">
                   <Row>
-                    <Accessories_right_goods/>
+
+                  {goods.map((item)=>
+                    <Accessories_right_goods
+                      key={item.sid}
+                      name={item.name}
+                      product_price={item.product_price}
+                    />)}
                   {/* 下方顯示總頁數*/}
                   <Col lg={12}>
                     <Accessories_right_pages/>
                   </Col>
+
                   </Row>
                 </Col>
               </Row>

@@ -24,6 +24,11 @@ class Wine_Tasting_index extends React.Component {
     //JQ放這
     componentDidMount() {
       // RWD 左邊欄位下拉選單
+      $(".plus-minus-orig").click(function(){
+        $("#left_menu_orig>ul").slideToggle()
+        $(".plus-orig").toggle()
+        $(".minus-orig").toggle()
+      })
       $(".plus-minus-cate").click(function(){
         $("#left_menu_cate>ul").slideToggle()
         $(".plus-cate").toggle()

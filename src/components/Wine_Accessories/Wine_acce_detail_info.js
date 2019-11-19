@@ -19,6 +19,17 @@ class Wine_acce_detail_info extends React.Component {
         };
     }
   componentDidMount = async () => {
+    return fetch('http://localhost:3000/text-db')
+      .then((response) => response.json())
+      .then((responseJson) => {
+          console.log(responseJson)
+          this.setState({
+            
+          });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
 
     render() {

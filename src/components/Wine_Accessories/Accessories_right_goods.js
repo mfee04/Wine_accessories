@@ -32,8 +32,8 @@ class Accessories_right_goods extends React.Component {
             <p>{this.props.name}</p>
             <div className="goods_info d-flex justify-content-between align-items-center">
               <div className="price_area">
-                <span>$<del>1500</del></span> 
-                <span className="price_discount ml-2"></span>
+                <span>$<del>{this.props.product_price}</del></span> 
+                <span className="price_discount ml-2">${this.props.product_price*0.9}</span>
               </div>
               <div className="goods_icon d-flex">
                 <div className="goods_icon_compare">

@@ -22,12 +22,12 @@ class Tasting_left_origin extends React.Component {
     render() {
         return (
           <>
-            <div id="left_menu_cate" className="mt-4">
-              <div className="menu_cate_tit">
+            <div id="left_menu_orig" className="mt-4">
+              <div className="menu_orig_tit">
                 <p>ORIGIN</p>
-                <div className="plus-minus-cate">
-                  <img src="../images/Wine_Accessories/plus.png" className="plus-cate" alt="" />
-                  <img src="../images/Wine_Accessories/minus.png" className="minus-cate" alt="" />
+                <div className="plus-minus-orig">
+                  <img src="../images/Wine_Accessories/plus.png" className="plus-orig" alt="" />
+                  <img src="../images/Wine_Accessories/minus.png" className="minus-orig" alt="" />
                 </div>
               </div>
               <ul>
