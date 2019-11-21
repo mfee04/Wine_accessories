@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 //css樣式
-import '../../style/Wine_accessories/Wine_service_detail.scss'
+// import '../../style/Wine_accessories/Wine_service_detail.scss'
 //分頁連結
 
 
@@ -18,7 +18,19 @@ class Wine_acce_detail_dec_title extends React.Component {
     }
     //JQ放這
     componentDidMount() {
-
+    // 商品簡述內文 & 品牌故事內文 切換動畫
+    $(".goods_description_title").click(function () {
+      $(this).addClass("bg_grey")
+      $(".goods_brand_story_title").removeClass("bg_grey")
+      $(".goods_description").show()
+      $(".goods_brand_story").hide()
+    })
+    $(".goods_brand_story_title").click(function () {
+      $(this).addClass("bg_grey")
+      $(".goods_description_title").removeClass("bg_grey")
+      $(".goods_brand_story").show()
+      $(".goods_description").hide()
+    })
     }
 
     render() {

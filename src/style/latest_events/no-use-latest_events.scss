@@ -1,0 +1,130 @@
+* {
+  font-family: 微軟正黑體;
+  /* outline: 1px solid sienna; */
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid #ccc;
+}
+/* 變數設定 */
+:root {
+  --color1: #3b2c25;
+  --color2: #61544a;
+  --color3: #2d333c;
+  --color4: #e6a33c;
+  --color5: #30120b;
+  --text-color: #646464;
+  --text-price: #752c1c;
+  --main-orange: #e6a33c;
+  --main-white: #ffffff;
+  --cate-font: "Trajan";
+  --main-black: #000000;
+  --main-blackRgba: #000000c0;
+  --em: 16;
+  --color7: rgb(255, 255, 255);
+}
+
+/***********    CardRow      *************************************************/
+.Card_border{
+  margin: 30px 30px 30px;
+  // padding: -100px;
+  max-width: 350px;
+  // height: 450px;
+  max-height: 500px;
+  button{
+    margin: 0 0px 0 0;
+    background-color: #262626;
+    &:hover{
+      background-color: #E6A33C;
+      border-color: #e6a33c;;
+    }
+  }
+  // padding: 0px -50px 20px;
+}
+.card-text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* line-clamp顯示行數 */
+  -webkit-line-clamp: 3;
+  // margin-bottom: 10px;
+}
+.card-title{
+  font-size: 18px;
+  font-weight:700;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* line-clamp顯示行數 */
+  -webkit-line-clamp: 2;
+  // text:bold;
+}
+.card-body{
+  height: 220px;
+}
+
+.padding_decrease{
+  padding: 5px;
+}
+/**********    FilterOption 左邊篩選欄      *************************************************/
+.sticky-top{  // FilterOption.js
+  // padding-top: 110px;
+  // margin-top: 110px;
+  top:120px;
+  position: sticky;
+  z-index: 0;
+}
+.FilterOption{
+  display: block;
+}
+/**********    Dropdown_Button 下拉選單      *************************************************/
+.dropdown{
+  padding: 10px;
+  // font-weight:700;
+  display: none;
+  #text{
+    font-weight:700;
+  }
+}
+
+@media (max-width: 991px) { 
+  .FilterOption{
+    display: none;
+  }
+  .dropdown{
+    display: block;
+  }
+}
+@media (max-width: 575.98px) { 
+  .div_padding_decrease{
+    padding-left: 25px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+
+
+@media only screen and (max-width: 1199px) {
+  
+}
+@media only screen and (max-width: 991px) {
+  
+}
+@media only screen and (max-width: 767px) {
+  
+}
+@media only screen and (max-width: 576px) {
+  
+}

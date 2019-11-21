@@ -5,13 +5,14 @@
   padding: 0;
 }
 /* 清除bootstrap 預設的btn按下去後會有藍框 */
+.btn,
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 /* 變數設定 */
@@ -34,6 +35,7 @@
 }
 
 /* - - - - - - - - - - - - */
+.tasting_detail_picslider_col{
 /* 麵包屑 */
 .bread_crumb > img {
   width: 20px;
@@ -240,3 +242,8 @@
     display: none !important;
   }
 }
+}
+
+
+
+

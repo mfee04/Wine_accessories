@@ -18,65 +18,83 @@ import Tasting_right_goods from './Tasting_right_goods'
 import Tasting_right_pages from './Tasting_right_pages'
 
 class Wine_Tasting_index extends React.Component {
-    constructor() {
-        super()
+  constructor(props) {
+    super(props)
+    this.state = {
+      goods: [],
+      filter: []
     }
-    //JQ放這
-    componentDidMount() {
-      // RWD 左邊欄位下拉選單
-      $(".plus-minus-orig").click(function(){
-        $("#left_menu_orig>ul").slideToggle()
-        $(".plus-orig").toggle()
-        $(".minus-orig").toggle()
-      })
-      $(".plus-minus-cate").click(function(){
-        $("#left_menu_cate>ul").slideToggle()
-        $(".plus-cate").toggle()
-        $(".minus-cate").toggle()
-      })
-      $(".plus-minus-sort").click(function(){
-        $(".sort_option").slideToggle()
-        $(".plus-sort").toggle()
-        $(".minus-sort").toggle()
-      })
-    }
+  }
+  //JQ放這
+  componentDidMount() {
 
-    render() {
-        return (
-          <>
-          <Container>
+    fetch('http://localhost:3000/wine-wine-db')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        this.setState({
+          goods: responseJson,
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+    // RWD 左邊欄位下拉選單
+    $(".plus-minus-cate").click(function () {
+      $("#left_menu_cate>ul").slideToggle()
+      $(".plus-cate").toggle()
+      $(".minus-cate").toggle()
+    })
+    $(".plus-minus-sort").click(function () {
+      $(".sort_option").slideToggle()
+      $(".plus-sort").toggle()
+      $(".minus-sort").toggle()
+    })
+  }
+
+  render() {
+    console.log('parent')
+    if (!this.state.goods.length) return <></>
+
+    //解構賦值
+    const { goods } = this.state
+    return (
+      <>
+        <Container>
+          <Row>
+            {/* 左邊 分類篩選*/}
+            <Col lg={3} sm={12} id="left_menu">
+              <Tasting_left_origin />
+              <Tasting_left_cate />
+              <Tasting_left_sort />
+              <Tasting_left_priceSlider />
+            </Col>
+            {/* 右邊 顯示商品列表*/}
+            <Col lg={9} sm={12} id="main_area">
               <Row>
-              {/* 左邊 分類篩選*/}
-                <Col lg={3} sm={12} id="left_menu">
-                  <Tasting_left_origin/>
-                  <Tasting_left_cate/>
-                  <Tasting_left_sort/>
-                  <Tasting_left_priceSlider/>
-                </Col>
-              {/* 右邊 顯示商品列表*/}
-                <Col lg={9} sm={12} id="main_area">
-                  <Row>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  <Tasting_right_goods/>
-                  {/* 下方顯示總頁數*/}
-                  <Col lg={12}>
-                    <Tasting_right_pages/>
-                  </Col>
-                  </Row>
+                {goods.map((item) =>
+                  <Tasting_right_goods
+                    key={item.sid}
+                    sid={item.sid}
+                    name={item.name} //名稱
+                    kind={item.kind} //種類
+                    producing_countries={item.producing_countries} //生產國
+                    brand={item.brand}  //品牌
+                    Production_area={item.Production_area} //產區
+                    capacity={item.capacity} //容量
+                    price={item.price} //$$
+                    my_file={item.my_file} //圖片
+                  />)}
+                {/* 下方顯示總頁數*/}
+                <Col lg={12}>
+                  <Tasting_right_pages />
                 </Col>
               </Row>
-          </Container>
-          </>
-        )
-    }
+            </Col>
+          </Row>
+        </Container>
+      </>
+    )
+  }
 }
 export default Wine_Tasting_index

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 //css樣式
-import '../../style/Wine_accessories/Wine_accessories_index.scss'
+// import '../../style/Wine_accessories/Wine_accessories_index.scss'
 //分頁連結
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 

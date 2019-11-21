@@ -13,9 +13,13 @@ import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 
 
 class Tasting_detail_picslider_preview extends React.Component {
-    constructor() {
-        super()
+  constructor(props) {
+    super(props)
+    this.state = {
+     
     }
+    // console.log(this.props.match.params)
+  }
     //JQ放這
     componentDidMount() {
       let sliderWidth = $("#slider_wrap").width();
@@ -43,7 +47,7 @@ class Tasting_detail_picslider_preview extends React.Component {
         return (
           <>
             <div class="preview_area d-flex">
-              <div class="preview_img"><img src="../images/Wine_Accessories/whitewine-rosendahl-grand-cru.jpg" alt=""/></div>
+              <div class="preview_img"><img src={`http://localhost/bistro/lib/images/wine/uploads/${this.props.my_file}`} /></div>
               <div class="preview_img"><img src="../images/Wine_Accessories/slider01.jpg" alt=""/></div>
               <div class="preview_img"><img src="../images/Wine_Accessories/slider03.jpg" alt=""/></div>
               <div class="preview_img"><img src="../images/Wine_Accessories/slider04.jpg" alt=""/></div>

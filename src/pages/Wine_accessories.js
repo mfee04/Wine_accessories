@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PathNow from '../components/PathNow'
 import Navigation_Navber from '../components/Navigation_Navber/Navigation_Navber'
 import Wine_accessories_index from '../components/Wine_Accessories/Wine_accessories_index'
 import Footer from '../components/Navigation_Navber/Footer'

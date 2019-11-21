@@ -26,7 +26,7 @@ class Tasting_detail_recommenditem extends React.Component {
           <>
             <div className="recommend_item d-flex flex-column align-items-center">
               <div className="recommend_pic">
-                <img src="../images/ci-carnivor.jpeg" alt=""/>
+                <img src="../images/Wine_Accessories/ci-carnivor.jpeg" alt=""/>
               </div>
               <p>羅蔓后溪酒莊 維黛爾VQA精選晚摘冰酒</p>
               <span className="recommend_price">1600</span>

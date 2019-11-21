@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation_Navber from '../../components/Navigation_Navber/Navigation_Navber'
+import Shopingcar from './Shopingcar'
 import Footer from '../../components/Navigation_Navber/Footer'
 
 // import Carousel from '../components/Navigation_Navber/Carousel'
@@ -7,9 +8,9 @@ import Footer from '../../components/Navigation_Navber/Footer'
 const Shoping = () => {
     return (
         <>
-           <Navigation_Navber/>
-           <h1>123</h1>
-           <Footer />
+            <Navigation_Navber />
+            <Shopingcar />
+            <Footer />
         </>
     )
 }

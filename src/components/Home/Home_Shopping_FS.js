@@ -31,7 +31,7 @@ class Home_Shopping_FS extends React.Component {
                     <Container className="d-flex justify-content-center Shooping_area">
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step1.svg"></img>
+                                <img src="../images/Wine_Accessories/step1.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
@@ -41,7 +41,7 @@ class Home_Shopping_FS extends React.Component {
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step2.svg"></img>
+                                <img src="../images/Wine_Accessories/step2.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
@@ -51,7 +51,7 @@ class Home_Shopping_FS extends React.Component {
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step3.svg"></img>
+                                <img src="../images/Wine_Accessories/step3.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
@@ -61,7 +61,7 @@ class Home_Shopping_FS extends React.Component {
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step4.svg"></img>
+                                <img src="../images/Wine_Accessories/step4.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>
@@ -71,7 +71,7 @@ class Home_Shopping_FS extends React.Component {
                         </div>
                         <div className="Shopping_FS_Block">
                             <div className="Shopping_FS_svg">
-                                <img src="../images/step5.svg"></img>
+                                <img src="../images/Wine_Accessories/step5.svg"></img>
                                 <p>挑選商品</p>
                                 <p>逛逛我們的Bistro網站選擇你所愛的那支酒</p>
                             </div>

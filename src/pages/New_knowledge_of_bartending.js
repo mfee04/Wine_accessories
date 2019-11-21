@@ -1,17 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import PathNow from '../components/PathNow'
-import Navigation_Navber from '../components/Navigation_Navber/Navigation_Navber'
+import Navigation_Navber_noImg from '../components/Navigation_Navber/Navigation_Navber_noImg'
+import Blog_list_index from '../components/Blog/Blog_list_index'
+// import Blog_article from '../components/Blog/Blog_article'
 import Footer from '../components/Navigation_Navber/Footer'
 
-const New_knowledge_of_bartending = () => {
+const Blog_list = () => {
     return (
         <>
-           <Navigation_Navber/>
-            <Footer/>
+          <Navigation_Navber_noImg/>
+          <Blog_list_index/>
+          {/* <Blog_article /> */}
+          <Footer/>
         </>
     )
 }
 
-
-export default New_knowledge_of_bartending
+export default Blog_list

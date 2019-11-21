@@ -33,7 +33,7 @@
 .Home_Container_LatestArticles_Bg_img {
   background-image: url(../../images/Layer-78.png);
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   //標題文字
@@ -61,41 +61,53 @@
     }
   }
   //中間圖片文字區域
-  .M_img {
-    width: 540px;
-    height: 553.55px;
-    background: var(--main-white);
+  .LatestArticles_Area2 {
+    display: flex;
+    justify-content: center;
     position: relative;
-    .figure {
-      display: flex;
-      width: 500px;
-      height: 300px;
-      overflow: hidden;
-      margin: auto;
-      padding-top: 16px;
-      img {
-        margin-top: 16px;
-        width: 100%;
+    .M_img {
+      max-width: 540px;
+      height: 553.55px;
+      background: var(--main-white);
+      position: relative;
+      .figure {
+        display: flex;
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
         margin: auto;
-      }
-    }
-    .text_region {
-      a {
-        text-decoration: none;
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        color: var(--main-black);
-        transition: 0.5s;
-        &:hover {
-          color: var(--main-orange);
-          transition: 0.5s;
+        padding-top: 16px;
+        img {
+          margin-top: 16px;
+          width: 100%;
+          margin: auto;
         }
       }
-    }
-    .figure_text {
-      width: 500px;
-      margin: 30px auto;
+      .text_region {
+        a {
+          text-decoration: none;
+          position: absolute;
+          bottom: -40px;
+          right: 10px;
+          color: var(--main-black);
+          transition: 0.5s;
+          &:hover {
+            color: var(--main-orange);
+            transition: 0.5s;
+          }
+        }
+      }
+      .figure_text {
+        max-width: 500px;
+        margin: 30px auto;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+      }
     }
   }
 }
@@ -112,7 +124,7 @@
       margin: 10px;
       .M_img {
         display: flex;
-        width: 800px;
+        max-width: 800px;
         height: 250px;
         margin: 0;
         .figure {
@@ -123,6 +135,11 @@
           img {
             margin: 0;
             background-size: cover;
+          }
+        }
+        .text_region {
+          a {
+            bottom: 0px;
           }
         }
       }
@@ -137,7 +154,7 @@
   .Home_Container_LatestArticles_Bg_img {
     .LatestArticles_Area2 {
       .M_img {
-        width: 600px;
+        max-width: 600px;
         height: 250px;
         position: relative;
         .figure {
@@ -146,18 +163,13 @@
         }
       }
       .figure_text {
-        width: 300px;
-        margin-bottom: 0;
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         white-space: normal;
         a {
-          bottom: -10px;
-          z-index: 30;
         }
       }
     }
@@ -182,6 +194,7 @@
       }
       .figure_text {
         width: 250px;
+        margin: 15px 0;
       }
     }
     .LatestArticles_Area3 {

@@ -22,10 +22,6 @@
   --em: 16;
   --color7: rgb(255, 255, 255);
 }
-// 與Navber隔開
-.pt-95 {
-  padding-top: 95px;
-}
 //刪除線
 .text-decoration-line-through {
   text-decoration: line-through;
@@ -35,6 +31,10 @@
   background-image: url(../../images/Rectangle-2-copy.jpg);
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   //標題文字
   h3 {
     margin: 0;
@@ -46,6 +46,7 @@
   .img_wine {
     justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
     a {
       text-decoration: none;
       margin: 0 18px;
@@ -146,8 +147,8 @@
 }
 @media only screen and (max-width: 575px) {
   .Home_Wine_bg {
-    .img_wine{
-      a{
+    .img_wine {
+      a {
         margin: 0 12px;
       }
     }

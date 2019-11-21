@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 //css樣式
-import '../../style/Wine_accessories/Wine_service_detail.scss'
+// import '../../style/Wine_accessories/Wine_service_detail.scss'
 //分頁連結
 
 

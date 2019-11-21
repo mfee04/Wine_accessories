@@ -8,7 +8,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 //css樣式
-import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
+import '../../style/Wine_accessories/Wine_service_index.scss'
+
 //分頁連結
 import Accessories_left_cate from './Accessories_left_cate'
 import Accessories_left_sort from './Accessories_left_sort'
@@ -25,30 +26,17 @@ class Wine_accessories_index extends React.Component {
         }
     }
     //
-    async componentDidMount() {
-      await fetch('http://localhost:3000/wine-acce-db')
+    componentDidMount () {
+      fetch('http://localhost:3000/wine-acce-db')
       .then((response) => response.json())
       .then((responseJson) => {
         this.setState({
           goods : responseJson,
         });
-        console.log(responseJson)
       })
       .catch((error) => {
         console.error(error);
       });
-
-      // RWD 左邊欄位下拉選單
-      $(".plus-minus-cate").click(function(){
-        $("#left_menu_cate>ul").slideToggle()
-        $(".plus-cate").toggle()
-        $(".minus-cate").toggle()
-      })
-      $(".plus-minus-sort").click(function(){
-        $(".sort_option").slideToggle()
-        $(".plus-sort").toggle()
-        $(".minus-sort").toggle()
-      })
 
     }
 
@@ -57,14 +45,12 @@ class Wine_accessories_index extends React.Component {
     handlefilter=(value)=>()=>{
       console.log(value)
       let arr=[]
-      
       fetch('http://localhost:3000/wine-acce-item/'+value)
       .then((response) => response.json())
       .then((responseJson) => {
         this.setState({
           goods : responseJson,
         });
-        console.log(responseJson)
       })
       .catch((error) => {
         console.error(error);
@@ -72,15 +58,17 @@ class Wine_accessories_index extends React.Component {
     }
 
     render() {
-
       if(!this.state.goods.length) return <></>
-
+     
       //解構賦值
       const {goods} = this.state
 
+      console.log(goods)
+      const pageItems = goods.length
+      console.log(pageItems)
         return (
           <>
-          <Container>
+          <Container className="Wine_acce_index_con">
               <Row>
               {/* 左邊 分類篩選*/}
                 <Col lg={3} sm={12} id="left_menu">
@@ -89,18 +77,20 @@ class Wine_accessories_index extends React.Component {
                   <Accessories_left_priceSlider/>
                 </Col>
               {/* 右邊 顯示商品列表*/}
+              
                 <Col lg={9} sm={12} id="main_area">
                   <Row>
-
-                  {goods.map((item)=>
+                  {goods.map((item)=>         
                     <Accessories_right_goods
                       key={item.sid}
+                      sid={item.sid}
                       name={item.name}
                       product_price={item.product_price}
                       product_pic={item.product_pic}
                       category_1st={item.category_1st}
                       category_2nd={item.category_2nd}
                     />)}
+
                   {/* 下方顯示總頁數*/}
                   <Col lg={12}>
                     <Accessories_right_pages/>

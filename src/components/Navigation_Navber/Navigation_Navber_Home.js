@@ -5,16 +5,19 @@ import '../../style/Home.scss'
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 import Home from '../../pages/Home'
 import Dining_pub_inquiry from '../../pages/Dining_pub_inquiry'
-import Wine_tasting from '../../pages/Wine_tasting' 
-import Wine_Tasting_detail from '../Wine_Tasting/Wine_Tasting_detail' 
+import Wine_tasting from '../../pages/Wine_tasting'
+import Wine_Tasting_detail from '../Wine_Tasting/Wine_Tasting_detail'
 import Wine_accessories from '../../pages/Wine_accessories'
 import Wine_accessories_detail from '../../components/Wine_Accessories/Wine_accessories_detail'
 import latest_events from '../../pages/latest_events'
 import New_knowledge_of_bartending from '../../pages/New_knowledge_of_bartending'
+import Blog_article from '../../components/Blog/Blog_article'
 import about_us from '../../pages/about_us'
 import Login_register from '../../pages/Login_register'
 import Shoping from '../../components/ShopingCar/Shoping'
-
+import Billing_details from '../../components/ShopingCar/Billing_details'
+import ScrollToTop from '../../components/ScrollToTop'
+import latest_events_detail from '../../components/latest_events/latest_events_detail'
 
 import $ from 'jquery'
 
@@ -53,19 +56,21 @@ class Navigation_Navber_Home extends React.Component {
                                     placeholder="Search"
                                     aria-label="Search"
                                 />
-                                <img src={"../images/icon-search.png"} alt="" className="magnifier_icon" />
+                                <img src={"../images/Wine_Accessories/icon-search.png"} alt="" className="magnifier_icon" />
                             </form>
-                            <img src={"../images/icon-mylove.png"} alt="" />
+                            <img src={"../images/Wine_Accessories/icon-mylove.png"} alt="" />
                             <Link to="/Shoping">
-                                <img src={"../images/icon-cart.png"} alt="" />
+                                <img src={"../images/Wine_Accessories/icon-cart.png"} alt="" />
                             </Link>
                             <p className="chart_money">0／<strong> $0.00</strong></p>
                         </div>
                     </div>
                     <nav class="navbar navbar-expand-lg navbar-light navberLogo">
                         <a class="navbar-brand" href="#">
-                            <img className="Logo_png" src={"../images/logo.png"}></img>
-                            <img className="Logo_svg ml-3" src={"../images/logo.svg"}></img>
+                            <Link to="/">
+                                <img className="Logo_png" src={"../images/Wine_Accessories/logo.png"}></img>
+                            </Link>
+                            <img className="Logo_svg ml-3" src={"../images/Wine_Accessories/logo.svg"}></img>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -99,19 +104,24 @@ class Navigation_Navber_Home extends React.Component {
                             </ul>
                         </div>
                     </nav>
-                    <Switch>
-                        <Route exact path="/" component={Home} /> {/* 首頁 */}
-                        <Route exact path="/Dining_pub_inquiry" component={Dining_pub_inquiry} />{/* 餐酒館查詢 */}
-                        <Route exact path="/Wine_tasting" component={Wine_tasting} />{/* 品酒迷因 */}
-                        <Route exact path="/Wine_tasting/Wine_Tasting_detail" component={Wine_Tasting_detail} />{/* 品酒迷因 */}
-                        <Route exact path="/Wine_accessories" component={Wine_accessories} />{/* 酒具服務 */}
-                        <Route exact path="/Wine_accessories_detail" component={Wine_accessories_detail} />{/* 酒具細節 */}
-                        <Route exact path="/latest_events" component={latest_events} />{/* 最新活動 */}
-                        <Route exact path="/New_knowledge_of_bartending" component={New_knowledge_of_bartending} />{/* 調酒新知 */}
-                        <Route exact path="/about_us" component={about_us} />{/* 關於我們 */}
-                        <Route exact path="/Login_register" component={Login_register} />{/* 登入/註冊 */}
-                        <Route exact path="/Shoping" component={Shoping} />
-                    </Switch>
+                    <ScrollToTop>
+                        <Switch>
+                            <Route exact path="/" component={Home} /> {/* 首頁 */}
+                            <Route exact path="/Dining_pub_inquiry" component={Dining_pub_inquiry} />{/* 餐酒館查詢 */}
+                            <Route exact path="/Wine_tasting" component={Wine_tasting} />{/* 品酒迷因 */}
+                            <Route exact path="/Wine_Tasting_detail/:sid" component={Wine_Tasting_detail} />{/* 品酒迷因 */}
+                            <Route exact path="/Wine_accessories" component={Wine_accessories} />{/* 酒具服務 */}
+                            <Route exact path="/Wine_accessories_detail/:sid" component={Wine_accessories_detail} />{/* 酒具細節 */}
+                            <Route exact path="/latest_events" component={latest_events} />{/* 最新活動 */}
+                            <Route exact path="/latest_events_detail" component={latest_events_detail} />{/* 最新活動細節 */}
+                            <Route exact path="/New_knowledge_of_bartending" component={New_knowledge_of_bartending} />{/* 調酒新知 */}
+                            <Route exact path="/Blog_article" component={Blog_article} />{/* Blog文章內容 */}
+                            <Route exact path="/about_us" component={about_us} />{/* 關於我們 */}
+                            <Route exact path="/Login_register" component={Login_register} />{/* 登入/註冊 */}
+                            <Route exact path="/Shoping" component={Shoping} /> {/*購物車*/}
+                            <Route exact path="/ShopingCar/Billing_details" component={Billing_details} /> {/* 購物車細節 */}
+                        </Switch>
+                    </ScrollToTop>
                 </>
             </Router>
         )

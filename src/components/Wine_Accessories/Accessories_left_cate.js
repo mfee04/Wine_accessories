@@ -4,8 +4,10 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-//css樣式
-import '../../style/Wine_accessories/Wine_accessories_index.scss'
+
+import '../../style/Wine_accessories/Wine_service_index.scss'
+
+
 //分頁連結
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 
@@ -14,12 +16,23 @@ import $ from 'jquery'
 class Accessories_left_cate extends React.Component {
     constructor(props) {
         super(props)
-        console.log(props)
+        // console.log(props)
     }
     componentDidMount() {
       // 篩選類別第二層動畫
       $(".cate_1st").click(function(){
         $(this).parent().find(".cate_2se").slideToggle()
+      })
+      // RWD 左邊欄位下拉選單
+      $(".plus-minus-cate").click(function(){
+        $("#left_menu_cate>ul").slideToggle()
+        $(".plus-cate").toggle()
+        $(".minus-cate").toggle()
+      })
+      $(".plus-minus-sort").click(function(){
+        $(".sort_option").slideToggle()
+        $(".plus-sort").toggle()
+        $(".minus-sort").toggle()
       })
     }
     
@@ -44,7 +57,7 @@ class Accessories_left_cate extends React.Component {
                 </div>
                 <div class="cate_2se">
                   <ul>
-                    <li onClick={this.props.handlefilter('b1')}>葡萄酒杯</li>
+                    <li value="b" onClick={this.props.handlefilter('b1')}>葡萄酒杯</li>
                     <li onClick={this.props.handlefilter('b2')}>威士忌杯</li>
                     <li onClick={this.props.handlefilter('b3')}>白蘭地杯</li>
                     <li onClick={this.props.handlefilter('b4')}>雞尾酒杯</li>

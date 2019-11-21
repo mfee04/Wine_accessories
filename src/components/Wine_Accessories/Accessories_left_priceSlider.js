@@ -10,7 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
 //css樣式
-import '../../style/Wine_accessories/Wine_accessories_index.scss'
+// import '../../style/Wine_accessories/Wine_accessories_index.scss'
 //分頁連結
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom"
 

@@ -36,8 +36,13 @@
     transform: translate(-50%, -50%);
     .Home_Fome_text {
       color: var(--main-white);
-      > p {
+      p:nth-child(1),
+      p:nth-child(3) {
         white-space: nowrap;
+        font-size: 24px;
+        margin: 0;
+      }
+      p:nth-child(2) {
         font-size: 24px;
         margin: 0;
       }

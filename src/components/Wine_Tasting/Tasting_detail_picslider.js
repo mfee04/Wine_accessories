@@ -13,9 +13,12 @@ import '../../style/Wine_Tasting/Wine_Tasting_index.scss'
 
 
 class Tasting_detail_picslider extends React.Component {
-    constructor() {
-        super()
+  constructor(props) {
+    super(props)
+    this.state = {
     }
+    // console.log(this.props.match.params)
+  }
     //JQ放這
     componentDidMount() {
 
@@ -27,7 +30,7 @@ class Tasting_detail_picslider extends React.Component {
             <div id="slider_wrap">
               <div className="slider-cont-wrap">
                 <ul className="d-flex slider-cont">
-                  <li><img src="../images/Wine_Accessories/whitewine-rosendahl-grand-cru.jpg" alt=""/></li>
+                  <li><img src={`http://localhost/bistro/lib/images/wine/uploads/${this.props.my_file}`} /></li>
                   <li><img src="../images/Wine_Accessories/slider01.jpg" alt=""/></li>
                   <li><img src="../images/Wine_Accessories/slider03.jpg" alt=""/></li>
                   <li><img src="../images/Wine_Accessories/slider04.jpg" alt=""/></li>

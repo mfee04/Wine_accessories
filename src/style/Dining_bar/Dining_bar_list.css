@@ -1,0 +1,110 @@
+.maplist {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.card-wrap {
+  height: 100vh;
+  width: 36%;
+  margin: 42px 42px 0 42px;
+  overflow-y: scroll;
+}
+/* 1199-xl  991-lg  767--md  575--sm */
+
+/* 篩選的父層 */
+.filter-wrap {
+  align-items: flex-start;
+}
+/* 網頁篩選的父層 */
+.web-filter {
+  display: flex;
+}
+/* 手機篩選的父層 */
+.filter-wrap .m_filter {
+  display: none;
+  /* display: flex; */
+  justify-content: space-around;
+  width: 100%;
+}
+/* 篩選圖示大小 */
+.dining_bar_icon {
+  width: 1rem;
+}
+
+#dropdown-basic-button {
+  background: rgb(211, 94, 26);
+}
+.btn-group {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+label.btn {
+  cursor: pointer;
+  margin-left: 0.5rem;
+
+  box-sizing: content-box;
+  display: flex;
+  /* justify-content: center; */
+}
+label.active {
+  cursor: pointer;
+  background: rgb(8, 50, 119);
+}
+
+/* filter for mobile */
+/* .filter_btn {
+  display: none;
+} */
+.bar_mobile {
+  background: rgb(255, 188, 149);
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  padding: 16px;
+  min-height: 100%;
+  /* display: none; */
+}
+.filter-wrap .bar_mobile li {
+  list-style: none;
+}
+/* 手機material 的設定 */
+#Dining_bar_price {
+  width: 40%;
+}
+/* .filter-wrap .MuiFormControl-root {
+  display: none;
+} */
+.MuiInput-formControl {
+  width: 150px;
+}
+
+@media screen and (max-width: 1250px) {
+  .btn-toolbar {
+    display: none !important;
+  }
+  #dropdown-basic-button {
+    display: none;
+  }
+  .filter_btn {
+    max-width: 100%;
+  }
+  /* .filter-wrap {
+    flex-flow: column;
+  } */
+}
+/* 地圖跟店家顯示 */
+@media screen and (max-width: 991px) {
+  #marker-example {
+    display: none;
+    transition: 0.5s;
+  }
+  .card-wrap {
+    width: 100%;
+    margin: 42px 0 0;
+    transition: 0.8s;
+  }
+  .canvas {
+    width: 100%;
+    left: 0;
+  }
+}

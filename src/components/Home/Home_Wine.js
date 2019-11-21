@@ -24,38 +24,38 @@ class Home_Wine extends React.Component {
             <>
                 <div className="Home_Wine_bg">
                     <Container className="w-100">
-                        <h3 className="pt-95">LAIESI&ensp;ARTICLES</h3>
+                        <h3>LAIESI&ensp;WINE</h3>
                         <div className="img_wine d-flex">
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                             <a href="">
-                                <img className="wine_svg" src="../images/glasses.svg"></img>
+                                <img className="wine_svg" src="../images/Wine_Accessories/glasses.svg"></img>
                                 <p>冰酒</p>
                             </a>
                         </div>
@@ -77,19 +77,19 @@ class Home_Wine extends React.Component {
                                     <div className="d-flex flex-end ml-2 mt-1">
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-compare_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-compare_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 收藏svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-like_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-like_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 加入購物車svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-cart_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-cart_wh.png"></img>
                                             </div>
                                         </a>
                                     </div>
@@ -113,19 +113,19 @@ class Home_Wine extends React.Component {
                                     <div className="d-flex flex-end ml-2 mt-1">
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-compare_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-compare_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 收藏svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-like_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-like_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 加入購物車svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-cart_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-cart_wh.png"></img>
                                             </div>
                                         </a>
                                     </div>
@@ -149,23 +149,22 @@ class Home_Wine extends React.Component {
                                     <div className="d-flex flex-end ml-2 mt-1">
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-compare_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-compare_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 收藏svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-like_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-like_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 加入購物車svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-cart_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-cart_wh.png"></img>
                                             </div>
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -185,23 +184,22 @@ class Home_Wine extends React.Component {
                                     <div className="d-flex flex-end ml-2 mt-1">
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-compare_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-compare_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 收藏svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-like_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-like_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 加入購物車svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-cart_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-cart_wh.png"></img>
                                             </div>
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -221,19 +219,19 @@ class Home_Wine extends React.Component {
                                     <div className="d-flex flex-end ml-2 mt-1">
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-compare_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-compare_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 收藏svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-like_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-like_wh.png"></img>
                                             </div>
                                         </a>
                                         {/* 加入購物車svg */}
                                         <a href="">
                                             <div className="icon_figure d-flex">
-                                                <img className="icon_bg" src="../images/icon-cart_wh.png"></img>
+                                                <img className="icon_bg" src="../images/Wine_Accessories/icon-cart_wh.png"></img>
                                             </div>
                                         </a>
                                     </div>

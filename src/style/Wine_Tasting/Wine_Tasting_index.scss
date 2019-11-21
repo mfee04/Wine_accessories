@@ -29,35 +29,8 @@
   height: 100%;
   margin: 0 auto;
 }
-.plus-minus-orig, .plus-minus-cate, .plus-minus-sort{
+.plus-minus-cate, .plus-minus-sort{
   display: none;
-}
-/* 選擇產地 */
-#left_menu_orig {
-  width: 90%;
-  margin: auto;
-  color: var(--text-color);
-  padding: 0 calc(var(--em) * 0.8px) calc(var(--em) * 0.8px);
-}
-.menu_orig_tit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu_orig_tit > p {
-  display: block;
-  font-family: var(--cate-font);
-  font-size: calc(var(--em) * 2px);
-  margin: 0;
-}
-#left_menu_orig > ul {
-  list-style: none;
-  margin: 0 auto;
-}
-#left_menu_orig > ul > li {
-  font-size: calc(var(--em) * 1px);
-  padding: calc(var(--em) * 0.5px) 0;
-  border-bottom: dashed 0.5px var(--frame-color);
 }
 /* 選擇類別 */
 #left_menu_cate {
@@ -125,39 +98,31 @@
   align-items: center;
 }
 
-/* sort 的 checkbox樣式 */
-.sort_option {
-  margin: calc(var(--em) * 1px) 0;
-}
-.sort_option > input[type="checkbox"] {
-  -webkit-appearance: none;
-  vertical-align: middle;
-  width: calc(var(--em) * 1px);
-  height: calc(var(--em) * 1px);
-  outline: solid 0.5px var(--frame-color);
-  background-color: transparent;
-}
-.sort_option > input[type="checkbox"]:checked::after {
-  content: "✔";
-  position: relative;
-  bottom: 4px;
-  left: 2px;
-  color: var(--text-color);
-}
-.sort_option > label {
-  padding-left: 15px;
-}
+  /* sort 的 checkbox樣式 */
+  .sort_option {
+    margin: calc(var(--em) * 1px) 0;
+  }
+  .sort_option > input[type="checkbox"] {
+    margin: 5px 10px 0 0;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    width: calc(var(--em) * 1px);
+    height: calc(var(--em) * 1px);
+    outline: solid 0.5px var(--frame-color);
+    background-color: transparent;
+  }
+  .sort_option > input[type="checkbox"]:checked::after {
+    content: "✔";
+    position: relative;
+    bottom: 6px;
+    left: 2px;
+    color: var(--text-color);
+  }
+  .sort_option > label {
+    padding-left: 15px;
+    margin:1px 4px !important;
+  }
 
-/* 我新增的 start */
-.sort_option input {
-  margin: 0 0 3px 0;
-}
-.sort_option label {
-  margin: 4px 0;
-}
-/* 我新增的 end */
-
-/* 選擇PRICE */
 #left_menu_price {
   width: 90%;
   color: var(--text-color);
@@ -309,8 +274,6 @@
     padding: 0;
   }
   // 減加icon
-  .plus-orig,
-  .minus-orig,
   .plus-cate,
   .minus-cate,
   .plus-sort,
@@ -318,26 +281,12 @@
     width: 20px;
     height: 20px;
   }
-  .plus-minus-orig, .plus-minus-sort, .plus-minus-sort{
+  .plus-minus-cate, .plus-minus-sort{
     display: block;
   }
-  .minus-orig,
   .minus-cate,
   .minus-sort {
     display: none;
-  }
-  // 左邊產地選擇欄
-  #left_menu_orig {
-    cursor: pointer;
-    padding: 10px 10px;
-    transition: 0.5s;
-    width: 100%;
-  }
-  #left_menu_orig > ul {
-    display: none;
-  }
-  .menu_orig_tit {
-    border-bottom: 1px solid var(--frame-color);
   }
   // 左邊類別選擇欄
   #left_menu_cate {
@@ -395,7 +344,7 @@
 }
 @media (min-width: 992px) {
   // 強制超過多少寬度就要出現XDDDD
-  #left_menu_orig>ul, #left_menu_cate>ul, .sort_option{
+  #left_menu_cate>ul, .sort_option{
     display: block !important;
   }
 }

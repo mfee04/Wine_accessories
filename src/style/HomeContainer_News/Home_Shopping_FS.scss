@@ -94,6 +94,11 @@
     }
   }
 }
+.Shooping_area{
+  .Shopping_FS_Block{
+    transition: .5s;
+  }
+}
 //-----------------------------------------------
 @media only screen and (max-width: 991px) {
   .Home_Shopping_FS_bg {
@@ -112,13 +117,13 @@
         transition: 0.5s;
         .Shopping_FS_text {
           p {
-            transform: translate(-260px, 220px) rotate(150deg);
+            transform: translate(-270px, 260px) rotate(150deg);
             transition: 0.5s;
           }
         }
       }
       .Shopping_FS_Block:nth-child(4) {
-        transform: translate(-320px, 300px);
+        transform: translate(-320px, 360px);
         transition: 0.5s;
         .Shopping_FS_text {
           p {
@@ -128,7 +133,7 @@
         }
       }
       .Shopping_FS_Block:nth-child(5) {
-        transform: translate(-280px, 300px);
+        transform: translate(-280px, 360px);
         transition: 0.5s;
       }
       .Shopping_FS_Block {
@@ -137,13 +142,15 @@
     }
   }
 }
-@media only screen and (max-width: 575px) {
+
+@media only screen and (max-width: 767px) {
   .Home_Shopping_FS_bg {
     .Shooping_area {
       .Shopping_FS_Block {
         .Shopping_FS_svg {
           width: 120px;
           height: 120px;
+          transition: 0.5s;
         }
       }
       .Shopping_FS_Block:nth-child(1) {
@@ -171,13 +178,13 @@
         transition: 0.5s;
         .Shopping_FS_text {
           p {
-            transform: translate(-230px, 200px) rotate(150deg);
+            transform: translate(-225px, 250px) rotate(150deg);
             transition: 0.5s;
           }
         }
       }
       .Shopping_FS_Block:nth-child(4) {
-        transform: translate(-260px, 300px);
+        transform: translate(-260px, 340px);
         transition: 0.5s;
         .Shopping_FS_text {
           p {
@@ -187,7 +194,65 @@
         }
       }
       .Shopping_FS_Block:nth-child(5) {
-        transform: translate(-220px, 300px);
+        transform: translate(-220px, 340px);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .Home_Shopping_FS_bg {
+    .Shooping_area {
+      .Shopping_FS_Block {
+        .Shopping_FS_svg {
+          width: 120px;
+          height: 120px;
+          transition: 0.5s;
+        }
+      }
+      .Shopping_FS_Block:nth-child(1) {
+        transform: translateX(140px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(0,-15px);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(2) {
+        transform: translateX(140px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(0,-15px);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(3) {
+        transform: translateX(140px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(-225px, 250px) rotate(150deg);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(4) {
+        transform: translate(-260px, 340px);
+        transition: 0.5s;
+        .Shopping_FS_text {
+          p {
+            transform: translate(15px,-15px);
+            transition: 0.5s;
+          }
+        }
+      }
+      .Shopping_FS_Block:nth-child(5) {
+        transform: translate(-220px, 340px);
         transition: 0.5s;
       }
     }

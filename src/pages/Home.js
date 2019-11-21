@@ -1,6 +1,5 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-// import PathNow from '../components/PathNow'
 import Carousel from '../components/Home/Carousel'
 import Home_Container_LatestEvents from '../components/Home/Home_Container_LatestEvents'
 import Home_Container_LatestArticles from '../components/Home/Home_Container_LatestArticles'

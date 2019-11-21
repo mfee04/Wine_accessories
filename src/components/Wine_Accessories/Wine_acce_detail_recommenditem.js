@@ -7,34 +7,55 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-//css樣式
-import '../../style/Wine_accessories/Wine_service_detail.scss'
 //分頁連結
 
 
 class Wine_acce_detail_recommenditem extends React.Component {
     constructor() {
         super()
+        this.state = {
+          rands: [],
+        };
     }
     //JQ放這
     componentDidMount() {
-
+      fetch('http://localhost:3000/Wine_detail/rand')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        // console.log(responseJson);
+        this.setState({
+          rands : responseJson,
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
     }
 
     render() {
+      
+      if(this.state.rands && !this.state.rands.length) 
+        return <></>
+      //解構賦值
+      const {rands} = this.state
+      console.log(rands);
         return (
           <>
+          {rands.map((items)=>
             <div className="recommend_item d-flex flex-column align-items-center">
               <div className="recommend_pic">
-                <img src="../images/Wine_Accessories/whitewine-rosendahl-grand-cru.jpg" alt=""/>
+                <img src={`http://localhost/bistro/lib/images/acce/test/${items.product_pic}`} alt=""/>
               </div>
-              <p>Rosendahl Grand Cru波爾多白酒杯（一組二入）</p>
-              <span className="recommend_price">1200</span>
+              <p>{items.name}</p>
+              <span className="recommend_price">{items.price}</span>
               <button className="btn add_cart_btn"><img src="../images/Wine_Accessories/icon-cart_brown.png" alt=""/>加入詢價車
               </button>
             </div>
+            )}
           </>
         )
+        
+       // return (<div></div>)
     }
 }
 export default Wine_acce_detail_recommenditem
